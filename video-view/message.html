@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>A1K50LH - Message</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<h1>Over and Over Again</h1>
+		<nav>
+			<ul>
+				<li><a href="./../album-view/index.html">Album</a></li>
+				<li><a href="./video.html">Video</a></li>
+				<li><a href="#two">Confessions</a></li>
+				<li><a href="./message.html">Message</a></li>
+				<!-- <li><a href="#contact">Contact</a></li> -->
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Intro -->
+	<section id="intro" class="main style1 dark fullscreen">
+		<div class="content">
+			<header>
+				<h2>Bây Giờ</h2>
+			</header>
+			<p>Hãy cùng nhau gửi lại những lời yêu thương. Cùng nhau lưu giữ lại những kỉ niệm về nhau nhé. Cảm ơn mọi
+				người rất nhiều!</p>
+			<footer>
+				<a href="#contact" class="button style2 down">More</a>
+			</footer>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<style>
+		.highlight {
+			border: 1.5px solid red !important;
+		}
+	</style>
+	<script>
+		function checkInputField() {
+			var isFormValid = true;
+
+			$("#contact input").each(function() {
+				if ($.trim($(this).val()).length == 0) {
+					$(this).addClass("highlight");
+					isFormValid = false;
+					$(this).focus();
+				}
+			});
+			if (!isFormValid) {
+				setTimeout(function() {
+					$("#contact input").each(function() {
+						$(this).removeClass("highlight");
+					});
+				}, 2000)
+			}
+			return isFormValid;
+		}
+	</script>
+
+	<section id="contact" class="main style3 secondary">
+		<div class="content">
+			<header>
+				<h1>Hãy cùng nhau để lại lời nhắn.</h1>
+				<p>Thank you!</p>
+			</header>
+			<div class="box">
+				<script type="text/javascript">var submitted = false;</script>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+					onload="if(submitted) {window.location='#popup1';}"></iframe>
+				<form method="post" onsubmit="submitted=checkInputField()"
+					action="https://docs.google.com/forms/d/e/1FAIpQLSfvv6V2CCZx6-ZhiWth42rI_R_3p0GdzOmttw9vzsgwg7gn6Q/formResponse"
+					target="hidden_iframe" autocomplete="off">
+					<div class="fields">
+						<!-- <div class="field half"><input type="text" name="name" placeholder="Name" /></div> -->
+						<!-- <div class="field half"><input type="email" name="email" placeholder="Email" /></div> -->
+						<div class="field"><input type="text" name="entry.2021469374" placeholder="Name" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" /></div>
+						<div class="field"><textarea name="entry.1321252790" placeholder="Message" rows="6" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false""></textarea>
+						</div>
+					</div>
+					<ul class="actions special">
+						<li><input type="submit" value="Send Message" /></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Popup -->
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<h2>Thank you</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content1">
+				Cảm ơn đã để lại lời nhắn
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+
+		<!-- Icons -->
+		<ul class="icons">
+			<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+			<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li> -->
+			<li><a href="https://facebook.com/tung.xuan.1656" class="icon brands fa-facebook"><span
+				class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://github.com/tungxuan1656" class="icon brands fa-github"><span
+						class="label">Github</span></a></li>
+			<li><a href="mailto: tungxuan101998@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+
+		<!-- Menu -->
+		<ul class="menu">
+			<li>&copy; Tùng Xuân</li>
+			<li>Design: Tùng Xuân and <a href="https://html5up.net">HTML5 UP</a></li>
+		</ul>
+
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
