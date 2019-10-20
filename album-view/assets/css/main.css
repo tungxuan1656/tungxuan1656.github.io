@@ -1034,8 +1034,8 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		#pre-header {
-			height: 2.5em;
-			line-height: 2.5em;
+			height: 5em;
+			line-height: 5em;
 		}
 
 			#pre-header h1 {
@@ -1051,9 +1051,31 @@ input, select, textarea {
 					font-size: 1em;
 				}
 
-			#pre-header nav {
-				display: none;
-			}
+				#pre-header nav {
+					position: relative;
+					bottom: 0;
+					height: 2.5em;
+					line-height: 2.5em;
+					background: #fff;
+					right: 0;
+				}
+		
+				#pre-header nav ul li {
+					display: inline-block;
+					margin-left: 0;
+					font-size: 0.7em;
+				}
+		
+				#pre-header nav ul {
+					margin-left: 1em;
+				}
+
+		#main {
+			margin: 5em 0 0 0 !important;
+		}
+		#viewer {
+			margin: 5em 0 0 0 !important;
+		}
 
 	}
 

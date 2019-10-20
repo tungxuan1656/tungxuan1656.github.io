@@ -794,6 +794,11 @@ table {
 	}
 }
 
+.box p {
+	color: #fff;
+	text-align: center;
+}
+
 /* Button */
 
 input[type="button"],
@@ -2033,7 +2038,10 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	#pre-header nav {
-		display: none;
+		position: relative;
+		bottom: 0;
+		height: 2.5em;
+		line-height: 2.5em;
 	}
 }
 
@@ -2093,27 +2101,45 @@ body.is-touch .poptrox-popup .closer {
 }
 
 @media screen and (max-width: 736px) {
+
 	#header {
-		height: 2.5em;
-		line-height: 2.5em;
+		height: 5em;
+		line-height: 5em;
 	}
 
-	#header h1 {
-		text-align: center;
-		position: relative;
-		left: 0;
-		top: 0;
-		height: 2.5em;
-		line-height: 2.5em;
-	}
+		#header h1 {
+			text-align: center;
+			position: relative;
+			left: 0;
+			top: 0;
+			height: 2.5em;
+			line-height: 2.5em;
+			margin: 0;
+		}
 
-	#header h1 a {
-		font-size: 1em;
-	}
+			#header h1 a {
+				font-size: 1em;
+			}
 
-	#header nav {
-		display: none;
-	}
+		#header nav {
+			position: relative;
+			bottom: 0;
+			height: 2.5em;
+			line-height: 2.5em;
+			background: #fff;
+			right: 0;
+		}
+
+		#header nav ul li {
+			display: inline-block;
+			margin-left: 0;
+			font-size: 0.7em;
+		}
+
+		#header nav ul {
+			margin-left: 1em;
+		}
+
 }
 
 body {
@@ -2331,9 +2357,9 @@ body.is-touch .main {
 		display: none !important;
 	}
 
-	.main.style2 .button.anchored {
+	/* .main.style2 .button.anchored {
 		display: none;
-	}
+	} */
 
 	.main.style2 .content {
 		width: 100%;
@@ -2352,7 +2378,10 @@ body.is-touch .main {
 
 @media screen and (max-width: 480px) {
 	.main > .content {
-		max-width: calc(100% - 1.5em);
+		max-width: 100%;
+	}
+	.box.style2 {
+		padding: 0;
 	}
 }
 
@@ -2519,10 +2548,29 @@ body.is-touch .main {
 	}
 }
 
+@media screen and (max-height: 850px) {
+	#contact .content {
+		top: 5% !important;
+	}
+	#contact {
+		padding: 0px !important;
+	}
+}
+
+@media screen and (max-height: 650px) {
+	#contact .content {
+		top: 0% !important;
+	}
+	#contact {
+		padding: 0px !important;
+	}
+}
+
 #contact .content {
 	display: block;
-	width: 70%;
-	margin: 50px auto;
+	top: 20%;
+	width: 90%;
+	margin: 0 auto;
 	background-color: #fff;
 	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
@@ -2541,6 +2589,13 @@ iframe {
 	padding: 5px;
 	border-radius: 3px;
 	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+	iframe {
+		width: 330px !important;
+		height: 190px !important;
+	}
 }
 
 /*
