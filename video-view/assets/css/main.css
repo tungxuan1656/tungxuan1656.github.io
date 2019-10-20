@@ -2202,7 +2202,7 @@ body {
 }
 
 .main.style1 h2 {
-	font-size: 4.25em;
+	font-size: 3.5em;
 	line-height: 1em;
 }
 
@@ -2347,7 +2347,12 @@ body.is-touch .main {
 	}
 
 	.main.fullscreen {
-		height: auto !important;
+		height: calc(100% - 2.5em) !important;
+		min-height: calc(100% - 2.5em) !important;
+	}
+
+	#intro {
+		min-height: 100% !important;
 	}
 
 	.main.style1 {
