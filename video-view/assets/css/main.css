@@ -730,7 +730,7 @@ a {
 	color: #98c593;
 }
 
-a:hover {
+li a:hover {
 	border-bottom: solid 1px;
 	border-bottom-color: #00d3b7;
 	color: #00d3b7 !important;
@@ -797,6 +797,16 @@ table {
 .box p {
 	color: #fff;
 	text-align: center;
+}
+
+.box h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 35px;
+}
+
+.box p a:hover {
+	color: #00d3b7;
 }
 
 /* Button */
@@ -936,7 +946,7 @@ form > .fields {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	width: calc(100% + 3em);
-	margin: -1.5em 0 2em -1.5em;
+	margin: -1.5em 0 0 -1.5em;
 }
 
 form > .fields > .field {
@@ -1197,7 +1207,7 @@ ul.actions {
 	cursor: default;
 	list-style: none;
 	margin-left: -1em;
-	padding-left: 0;
+	padding: 15px 0;
 }
 
 ul.actions li {
@@ -2484,7 +2494,7 @@ body.is-touch .main {
 #nine,
 #eleven,
 #thirteen,
-#fifteen {
+#fifteen, #confession1, #confession3, #confession5 {
 	background: url("images/overlay.png"), url("../../images/one.jpg");
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
@@ -2501,7 +2511,7 @@ body.is-touch .main {
 #twelve,
 #fourteen,
 #sixteen,
-#contact {
+#contact, #confession2, #confession4, #confession6 {
 	background: url("images/overlay.png"), url("../../images/two.jpg");
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
@@ -2536,6 +2546,10 @@ body.is-touch .main {
 	transform: translateY(100%);
 }
 
+#contact .content .box {
+	padding: 0 1em !important;
+}
+
 @media screen and (max-width: 736px) {
 	#contact .box {
 		padding: 1.5em 1.5em 2em 1.5em;
@@ -2568,7 +2582,7 @@ body.is-touch .main {
 
 #contact .content {
 	display: block;
-	top: 20%;
+	top: 5%;
 	width: 90%;
 	margin: 0 auto;
 	background-color: #fff;
@@ -2577,7 +2591,7 @@ body.is-touch .main {
 }
 
 #contact .content header {
-	padding: 30px 0 0 0;
+	padding: 20px 0 0 0;
 }
 
 iframe {
